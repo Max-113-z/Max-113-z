@@ -18,12 +18,12 @@
     密碼： <input type="password" name="password" 
             placeholder="密碼" value="{{old('password')}}"><br>
     使用者類型：
-    <input type="radio" name="usertype" value="user"
-        @if (old("usertype")=="user" )
+    <input type="radio" name="type" value="G"
+        @if (old("type")=="user" )
         checked
         @endif> 一般使用者
-    <input type="radio" name="usertype" value='admin'
-        @if (old("usertype")=="admin" )
+    <input type="radio" name="type" value='A'
+        @if (old("type")=="admin" )
         checked
         @endif> 管理員<br>
     <input type="submit" value="註冊">
