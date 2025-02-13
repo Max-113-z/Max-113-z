@@ -25,9 +25,9 @@ class UserAuthController extends Controller
         if ($input['nickname'] == '') {
             print('暱稱不得為空');
             return redirect('/user/auth/signup')
-                ->withErrors(['暱稱不得為空', '請重新輸入']);
+                ->withErrors(['暱稱不得為空', '請重新輸入'])
+                ->withInput();
         }
     }
-
-};
+}
 
