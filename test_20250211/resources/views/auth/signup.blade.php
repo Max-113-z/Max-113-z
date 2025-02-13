@@ -7,7 +7,7 @@
 <!-- 傳送資料到母模板，並指定變數為 content -->
 @section('content') 
 <h1>{{ $title }}</h1> 
-<!-- @include('component.social') -->
+@include('component.errors')
 
 <form action="/user/auth/signup" method="post">
     {{csrf_field() }}
