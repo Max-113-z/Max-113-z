@@ -11,7 +11,7 @@ Route::group(['prefix' => 'user'], function () {
         );
         Route::get('signup', 'App\Http\Controllers\UserAuthController@SignUpPage'
         );
-        Route::post('signup', 'App\Http\Controllers\UserAuthController@SignUp'
+        Route::post('signup', 'App\Http\Controllers\UserAuthController@SignUpProcess'
         ); 
 
     });
