@@ -32,6 +32,10 @@ Route::group(['prefix' => 'merchandise'], function () {
         'create',
         'App\Http\Controllers\MerchandiseController@MerchandiseCreateProcess'
     );
+    Route::get(
+        '{mechandise_id}/edit',
+        'App\Http\Controllers\MerchandiseController@MerchandiseEditPage'
+    );
 });
             
 
