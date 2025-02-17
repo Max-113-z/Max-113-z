@@ -27,5 +27,11 @@ Route::group(['prefix' => 'user'], function () {
         );
     });
 });
+Route::group(['prefix' => 'merchandise'], function () {
+    Route::get(
+        'create',
+        'App\Http\Controllers\MerchandiseController@MerchandiseCreateProcess'
+    );
+});
             
 
