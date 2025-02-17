@@ -79,6 +79,7 @@ class UserAuthController extends Controller
                 ->withInput();
         } else {
             if (Hash::check($input['password'], $tmpuser['password'])) {
+                session()->put('user_id', $tmpuser['id']);
                 return redirect('/user/auth/signin')
                     ->withErrors(['密碼正確', '請重新輸入'])
                     ->withInput();
@@ -93,6 +94,11 @@ class UserAuthController extends Controller
                     ->withInput();
             }
         }
-    }     
+    }
+    public function SignOut()
+    {
+        session()->forget('user_id');
+        return redirect('/user/auth/signin');
+    }    
 }
 

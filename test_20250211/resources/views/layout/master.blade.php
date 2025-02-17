@@ -11,8 +11,12 @@
         <header>
         </header>
         <main> 
+            @if(session()->has('user_id'))
+            <a href="/user/auth/signout">登出</a>
+            @else
             <a href="/user/auth/signup">註冊</a> 
-            <a href="/user/auth/signin">登入</a> 
+            <a href="/user/auth/signin">登入</a>
+            @endif
         </main> 
         <div class="container"> 
             @yield('content') 
