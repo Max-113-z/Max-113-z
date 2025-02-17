@@ -8,10 +8,12 @@
         <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
     </head> 
     <body> 
-        <header> 
+        <header>
+        </header>
+        <main> 
             <a href="#">註冊</a> 
             <a href="#">登入</a> 
-        </header> 
+        </main> 
         <div class="container"> 
             @yield('content') 
         </div> 
