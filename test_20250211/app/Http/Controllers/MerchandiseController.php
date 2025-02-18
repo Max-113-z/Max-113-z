@@ -61,13 +61,11 @@ class MerchandiseController extends Controller
             $file_relative_path = 'images/merchandise/';
             // 檔案存放目錄為對外公開 public 目錄下的相對位置
             $file_path = public_path($file_relative_path);
-
-            // 裁切圖片
-            // $image = Image::make($photo)->fit(450, 300)->save($file_path);
-            // 設定圖片檔案相對位置
-            // $input['photo'] = $file_relative_path;
+             // 移動上傳檔案
+             $photo->move($file_path, $file_name);
+             // 設定存入資料庫的檔案路徑 是相對路徑
+             $input['photo'] = $file_relative_path . $file_name;
         }
-        dd($input);
         Merchandise::where('id', $merchandise_id)
             ->update($input);
         return redirect('/merchandise/' . $merchandise_id . '/edit');
