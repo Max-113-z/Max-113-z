@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\AuthUserAdminMiddleware;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -31,7 +32,7 @@ Route::group(['prefix' => 'merchandise'], function () {
     Route::get(
         'create',
         'App\Http\Controllers\MerchandiseController@MerchandiseCreateProcess'
-    );
+    )->middleware(AuthUserAdminMiddleware::class);
     Route::get(
         '{mechandise_id}/edit',
         'App\Http\Controllers\MerchandiseController@MerchandiseEditPage'
