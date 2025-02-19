@@ -1,0 +1,501 @@
+/*重置歸零*/
+*{
+    font-size: 100%;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}/*全部的元素重置*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}/*連結元素重置*/
+
+img{
+    width: 100%;
+
+}/*圖片元素重置*/
+
+ul,ol{
+    list-style: none;
+}/*清單元素重置*/
+
+input,button,textarea{
+    display: inline-block;
+    background-color: transparent;
+}/*表單元素重置*/
+
+/*寬度*/
+.w100,
+.flex-w-100 {
+
+    flex:0 0 100%;
+    width:100%
+}
+
+.w90,
+.flex-w-90 {
+    flex:0 0 90%;
+    width:90%;
+}
+
+
+.w80,
+.flex-w-80{
+    flex:0 0 80%;
+    width: 80%;
+}
+
+.w70,
+.flex-w-70{
+
+    flex:0 0 70%;
+    width: 70%;
+}
+
+.w66,
+.flex-w-66{
+
+    flex:0 0 66%;
+    width: 66%;
+}
+
+.w60,
+.flex-w-66{
+
+    flex:0 0 60%;
+    width: 60%;
+}
+
+.w50,
+.flex-w-50{
+
+    flex:0 0 50%;
+    width: 50%;
+}
+.w40,
+.flex-w-40{
+
+    flex:0 0 40%;
+    width: 40%;
+}
+.w33,
+.flex-w-33{
+    
+    flex:0 0 33%;
+    width: 33%;
+}
+
+.w30,
+.flex-w-30{
+    
+    flex:0 0 30%;
+    width: 30%;
+}
+
+.w25,
+.flex-w-25{
+    
+    flex:0 0 25%;
+    width: 25%;
+}
+.w20,
+.flex-w-20{
+    
+    flex:0 0 20%;
+    width: 20%;
+}
+
+.w10,
+.flex-w-10{
+    
+    flex:0 0 10%;
+    width: 10%;
+}
+
+
+[class^="w-"]{
+    float: left;
+}/*定義代號w-為浮點數*/
+
+
+/*外距設定*/
+.m-auto{
+    margin: auto;
+}
+/*置中*/
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.mx-05{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.mx-1{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.mx-2{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.mx-3{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/*上下間距*/
+.my-05{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.my-1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.my-2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.my-3{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/*中*/
+.m-05{
+    margin: 0.5rem;
+}
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 2rem;
+}
+.m-3{
+    margin: 3rem;
+}
+/*上*/
+.mt-05{
+    margin-top: 0.5rem;
+}
+.mt-1{
+    margin-top: 1rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+/*左*/
+.ms-05{
+    margin-left: 0.5rem;
+}
+.ms-1{
+    margin-left: 1rem;
+}
+.ms-2{
+    margin-left: 2rem;
+}
+.ms-3{
+    margin-left: 3rem;
+}
+/*右邊*/
+.me-05{
+    margin-right: 0.5rem;
+}
+.me-1{
+    margin-right: 1rem;
+}
+.me-2{
+    margin-right: 2rem;
+}
+.me-3{
+    margin-right: 3rem;
+}
+.me-7{
+    margin-right: 10rem;
+}
+/*下*/
+.mb-05{
+    margin-bottom: 0.5rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+
+
+/*內距設置*/
+
+.p-auto{
+    padding: auto;
+}
+/*置中*/
+.px-auto{
+    padding-left: auto;
+    padding-right: auto;
+}
+.px-05{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.px-1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.px-2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.px-3{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+/*上下間距*/
+.py-05{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.py-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.py-3{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.py-5{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.py-7{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+/*四周間距*/
+.p-05{
+    padding: 0.5rem;
+}
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-3{
+    padding: 3rem;
+}
+/*上*/
+.pt-05{
+    padding-top: 0.5rem;
+}
+.pt-1{
+    padding-top: 1rem;
+}
+.pt-2{
+    padding-top: 2rem;
+}
+.pt-3{
+    padding-top: 3rem;
+}
+/*左*/
+.ps-05{
+    padding-left: 0.5rem;
+}
+.ps-1{
+    padding-left: 1rem;
+}
+.ps-2{
+    padding-left: 2rem;
+}
+.ps-3{
+    padding-left: 3rem;
+}
+/*右邊*/
+.pe-05{
+    padding-right: 0.5rem;
+}
+.pe-1{
+    padding-right: 1rem;
+}
+.pe-2{
+    padding-right: 2rem;
+}
+.pe-3{
+    padding-right: 3rem;
+}
+.pe-8{
+    padding-right: 15rem;
+}
+
+/*下*/
+.pb-05{
+    padding-bottom: 0.5rem;
+}
+.pb-1{
+    padding-bottom: 1rem;
+}
+.pb-2{
+    padding-bottom: 2rem;
+}
+.pb-3{
+    padding-bottom: 3rem;
+}
+
+/*文字對齊*/
+.ta-start{
+    text-align: start;
+}/*向左對齊*/
+
+.ta-center{
+    text-align: center;
+}/*向中對齊*/
+
+.ta-end{
+    text-align: end;
+}/*向右對齊*/
+
+.ta-justify{
+    text-align: justify;
+}/*平均對齊*/
+
+/*位置定位*/
+
+.position-relative{
+    position: relative;
+}/*相對*/
+
+.position-absolute{
+    position: absolute;
+}/*絕對*/
+
+.position-fixed{
+    position: fixed;
+}/*固定*/
+
+/* .container{
+    top: 0;
+    bottom: 0;
+    align-items: center;
+} */
+
+
+
+
+/*顯示*/
+
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.d-inline{
+    display: inline;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.d-flex{
+    display: flex;
+}
+
+/*表格*/
+.d-table{ 
+    display: table;
+    table-layout: fixed; /*使表格內物件固定相同尺寸*/
+    border-collapse: collapse; 
+}
+
+.d-table-row{
+    display: table-row;
+}/*列,同<tr>*/
+
+.d-table-cell{
+    display: table-cell;
+}/*儲存格,同<td>*/
+
+/*flex 對齊*/
+.align-items-center{
+    align-items: center;
+}
+.justify-contet-center{
+    justify-content: center;
+}
+.justify-contet-between{
+    justify-content: space-between;
+}
+/*flex排列方向*/
+.flex-row{
+    flex-direction: row; /*預設的橫向排列*/
+}
+.flex-column{
+    flex-direction: column; /*縱向排列*/
+}
+
+/*flex排列折行*/
+
+.flex-wrap{
+
+    flex-wrap: wrap;  /*在設定的大小內會自動換行*/
+}
+.flex-nowrap{
+
+    flex-wrap: nowrap; /*在設定的大小內不會自動換行*/
+}
+
+
+/*高度*/
+.h-vh-100{
+    height: 100vh;
+}
+.h-vh-50{
+    height: 50vh;
+}
+
+/*浮動,可用於環繞文字效果上*/
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.float-none{
+    float: none;
+}
+
+/*::after,::before 偽元素,可利用此元素來設計版面而不影響html*/
+.cf::after,.cf::before{ 
+    content: "";
+    display: block;  /*將定義標籤的排版*/
+}
+.cf::after{
+    clear: both; /*清除浮動*/
+}
+
+
+
+
+
+
+

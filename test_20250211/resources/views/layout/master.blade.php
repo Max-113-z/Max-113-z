@@ -2,8 +2,9 @@
     <head> 
         <meta charset="utf-8"> 
         <title>@yield('title')</title>
-        <script src="{{asset('assets/js/jquery-2.2.4.min.js')}}"defer></script>
-        <script src="{{asset('assets/js/bootstrap.min.js')}}" defer></script>
+        <script src="{{asset('assets/js1/jquery-2.2.4.min.js')}}"defer></script>
+        <script src="{{asset('assets/js1/bootstrap.min.js')}}" defer></script>
+        <link rel="stylesheet" href="{{asset(js/ui-main/dist/fancybox/fancybox.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/bootstrap-5.3.3-dist/css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/fonts/icons-1.11.3/font/bootstrap-icons.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/bostyle.css')}}" >
@@ -201,9 +202,9 @@
           </div>
           <!-- 連結 -->
           <div class="col">
-            <h3 class="h5 border-bottom d-inline-block col-8 pb-3 fw-bolder">連結</h3>
+            <h3 class="h5 border-bottom d-inline-block col-8 pb-3 fw-bolder text-light">連結</h3>
             <!-- hr class=h5 h -->
-            <ul class="list-unstyled row row-cols-2 g-3">
+            <ul class="list-unstyled row row-cols-2 g-2 text-light">
               <li class="nav-item">
                 <a class="nav-link " href="index.html#about" title="前往 關於我們">關於我們</a>
               </li>
@@ -231,17 +232,17 @@
             </ul>
           </div>
           <!-- 聯絡資訊 -->
-          <div class="col">
+          <div class="col text-light">
             <h3 class="h5 border-bottom d-inline-block col-8 pb-3 fw-bolder">聯絡資訊</h3>
             <ul class="list-unstyled">
-              <li><span>客服專線:</span>+886 0942-300-579</li>
-              <li><span>電子信箱:</span>service@gmail.com</li>
-              <li>
+              <li class=mb-2><span>客服專線:</span>+886 0942-300-579</li>
+              <li class=mb-2><span>電子信箱:</span>service@gmail.com</li>
+              <li class=mb-2>
                 <span>地址:</span>
-                <a class="text-dark" href="https://maps.app.goo.gl/3YHmYz3VusYfgEhk6" title="前往google map[另開新視窗]"
+                <a class="text-light" href="https://maps.app.goo.gl/3YHmYz3VusYfgEhk6" title="前往google map[另開新視窗]"
                   target="_blank">高雄市鼓山區華安街49號</a>
               </li>
-              <li><span>營業時間:</span>週二-週日 9am 到 9pm</li>
+              <li class=mb-2><span>營業時間:</span>週二-週日 9am 到 9pm</li>
               <li><span>店休時間:</span>週一 及 每月的第三週 週日</li>
             </ul>
           </div>

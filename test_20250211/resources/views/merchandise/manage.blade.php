@@ -11,17 +11,19 @@
 
 <!-- @include('component.social') -->
 @include('component.errors')
-<ul>
+<ul class="list-group">
     @foreach($merchandises as $merchandise)
-    <li>
-        <h4>{{ $merchandise->name }}</h4>
-        <img src="/{{ $merchandise->photo or '/assets/images/default-merchandise.png' }}" />
-        <p>{{ $merchandise->price }}</p>
-        <a href="/merchandise/{{ $merchandise->id }}/edit">編輯</a>
-        <form action="/merchandise/{{ $merchandise->id }}" method="post">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+            <h4 class="mb-1">{{ $merchandise->name }}</h4>
+            <img src="{{ asset($merchandise->photo ?? 'assets/images/default-merchandise.png') }}" />
+            <p class="mb-1">{{ $merchandise->price }}</p>
+            <a href="/merchandise/{{ $merchandise->id }}/edit" class="btn btn-primary btn-sm">編輯</a>
+        </div>
+        <form action="/merchandise/{{ $merchandise->id }}" method="post" class="d-inline">
             {{ csrf_field() }}
             {{ method_field('DELETE') }}
-            <button type="submit">刪除</button>
+            <button type="submit" class="btn btn-danger btn-sm">刪除</button>
         </form>
     </li>
     @endforeach

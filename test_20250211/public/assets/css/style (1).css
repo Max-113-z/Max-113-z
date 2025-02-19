@@ -1,0 +1,404 @@
+body{
+
+    font-family: "微軟正黑體",sans-serif; /*sans-serif表無襯線字體 黑體*/
+}
+
+
+
+/*色彩計畫*/
+.text-red{
+    color:#904C77;
+}
+.text-gray{
+    color:#957D95;
+}
+.text-orange{
+    color:#FFAD8F;
+}
+.text-lightora{
+    color:#FFD6C0;
+}
+.text-white{
+    color:#EED9CD;
+}
+
+.bg-red{
+    background-color:hsl(322, 31%, 43%);
+}
+.bg-red-a{
+    background-color:hsla(322, 31%, 43%, 0.7);
+}
+.bg-gray{
+    background-color:#957D95;
+}
+.bg-gray{
+    background-color:#FFD6C0;
+}
+.bg-white{
+    background-color:#EED9CD;
+}
+
+
+
+
+/*使所有input框內及按鈕物件顏色改回透明,方便之後自訂顏色*/
+input,button{
+
+    
+    background-color: transparent;
+
+    font-family: "微軟正黑體",sans-serif;
+}
+
+/*表符號,編號隱藏*/
+ul,ol{
+    list-style: none;   
+}
+
+/*圖片以原尺寸顯示*/
+img{
+    width: 100%;
+}
+
+/*nav連結設置重製*/
+a{  
+    display: inline-block;
+    text-decoration: none;
+}
+/*hover:nav連結設置滑鼠滑入動畫,滑鼠樺入會有底線出現*/
+/* nav a:hover{ 
+    text-decoration: underline;
+} */
+
+/*nav連結文字設置重製*/
+nav a{ 
+    padding: 0.5rem 1rem;
+    font-size: 1.025rem;
+    font-weight: 900;
+    color: #FFD6C0;
+    letter-spacing: 2px;
+}
+nav li :last-of-type a{
+    border: 0 ;
+}
+
+/*top-logo尺寸設置*/
+.logo_circle{
+
+    width: 80%;
+}
+
+
+
+
+
+
+
+h1 span{
+    display: none; /*將span中所包含內容隱藏,卻不影響到 h1中其他圖示的顯示*/
+}
+
+.top-link{
+    width: 1320px; /*版面大小寬度*/
+    /*border: 1px solid #202020 ; 邊框線條,粗細*/
+    
+    margin-left: auto;
+    margin-right: auto;  /*設置margin_left&right使版面置中*/
+}
+h2{
+    font-size: 2rem;
+    color: #5A0001 !important; /*important會將標籤設為第一優先執行項目*/ 
+    font-weight: 700;
+}
+p,.service-list{        /*用逗點隔開即可使用相同的特定指令*/
+    
+    font-size: 1.25rem;
+    color: #402021;
+    font-weight: 700;
+    text-align: justify; /*只有中文網站需要再作左右齊行*/
+}
+/*p:nth-of-type(2){  (nth-of-type可指定某一標籤中的第幾個選項作特定指令)
+    color:#7fff00 !important ;
+}*/
+
+.service-list{      /*更改清單標示圖案*/
+    list-style-type:square;
+}
+
+/*設置框架大小*/
+
+.w-100{
+    width: 100%;
+}
+.w-90{
+    width: 90%;
+}
+.w-80{
+    width: 80%;
+}
+.w-70{
+    width: 70%;
+}
+.w-60{
+    width: 60%;
+}
+.w-50{
+    width: 50%;
+}
+.w-40{
+    width: 40%;
+}
+.w-30{
+    width: 30%;
+}
+.w-20{
+    width: 20%;
+}
+.w-10{
+    width: 10%;
+}
+[class^="w-"]{
+    float: right; /*定義w-標籤的浮動*/
+}
+
+
+h1{
+    width: 150px;
+    /*padding-top: 1rem;
+    padding-bottom: 1rem; /*設置h1中logo尺寸*/
+
+    padding: 1rem 0 ; /*上下,左右|上,左右,下*/
+}
+article .w-40{
+    background-color: #ffff;
+    padding: 1rem;
+}
+article:nth-of-type(1).w-40{
+    padding-left: 10rem;
+}
+article:nth-of-type(1).w-40{
+    padding-right: 10rem;
+
+}
+
+/*間距代號設置*/
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.mb-5{
+    margin-bottom: 5rem;
+}
+
+
+/*絕對的子元素*/
+
+.top-link,.top-link ul{
+    display: flex; 
+}
+.d-flex{ 
+    display: flex;
+}
+.align-items-center{
+    align-items: center; /*設定垂直居中*/
+}
+.justify-content-between{
+    justify-content:space-between /*設定水平均分間距*/
+}
+.justify-content-center{
+    justify-content: center; /*設定水平居中*/
+}/*均用於flex屬性*/
+
+.search-form{ /*搜尋框尺寸設置*/
+
+    width: 60%;
+    /*border-radius: 30px 0 ; 邊框圓角設定,數字順序為左上,右上,右下,左下*/
+    border-radius: 40px ;
+    padding: 0.5rem 1rem;
+}
+.search-form div{
+    height: 60px;  /*搜尋框尺寸設置*/
+}
+.search-form input{
+    width: 650px;
+    padding: .5rem 0;
+
+}
+.border-bottom-3{
+    border-bottom:3px solid#ffff ; /*top link背景框線設置*/
+}
+
+/*顏色設置*/
+
+.bg-brown{
+    background-color: #965C65; /*top link背景顏色設置*/
+}
+.bg-gray{
+    background-color: #FFECE5;
+}
+.text-white{
+    color: #FFECE5;
+}
+.text-brown{
+    color: #965C65;
+}
+
+hr{
+    border-bottom: 1px solid#965C65;
+}
+/*footer版面設置*/
+small{
+    font-size: 0.875rem;
+}
+footer{
+    background-color: #965C65;
+    color: #ffff;
+    text-align: center;
+    padding: 1rem;
+    letter-spacing: 2px;
+
+}
+/*置頂按鈕設置*/
+.go-top{
+    position: fixed;
+    right: 70px;
+    bottom: 50px;
+    background-color: #965C65;
+    width: 60px;
+    height: 60px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 10px #322b4d;
+}
+
+
+.menu-btn span
+.close-btn span{
+    font-size: 2rem;
+}
+
+/*標籤按鈕設置*/
+.filter-btn li{
+    cursor: pointer;
+    border-radius:1rem;
+}
+
+/*使最後一個按鈕間隔取消*/
+.filter-btn li:last-of-type{
+   margin-right: 0;
+}
+
+/*標籤按鈕滑動設置*/
+.filter-btn li:hover{
+    background-color: #FFECE5;
+    color: #5A0001;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s; /*捕間動畫秒數設置*/
+}
+.filter-btn li:active{
+    background-color: #dc4032;
+    color:#FFECE5;
+}
+
+
+
+/*此為設定index&product頁面設計*/
+
+
+/*設定整體版面大小與排版*/
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+/*為不影響其他頁面的mb-5數值,但index不需要此數值的狀況下,將body設置id另外寫一個取消語法去隱藏mb值*/
+#home nav{
+    margin-bottom: 0;
+}
+
+/*調整輪播圖中文字位置*/
+#home header .item img+.position-absolute,
+#home header>div:nth-of-type(2)
+{
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index:2;
+}
+
+/*輪播圖中點點&箭頭共同位置調整*/
+.owl-dots,
+#home header .owl-nav{
+
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+/*輪播圖中點點位置調整*/
+.owl-dots{
+
+    bottom: 2rem;
+
+}
+
+/*輪播圖中點點設計調整*/
+.owl-theme .owl-dots .owl-dot span{
+
+    width: 15px;
+    height: 15px;
+    background: #965C65;
+}
+
+/*輪播圖中點點輪播動畫設計調整*/
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot.hover span{
+
+    background: #FFECE5 ;
+}
+
+
+
+/*輪播圖箭頭位置調整*/
+#home header .owl-nav {
+
+    top: 40%;
+    /*使箭頭平均分配在左右兩側*/
+    display: flex;/*靠左*/
+    justify-content: space-between;/*向兩側對齊*/
+    
+   
+
+}
+/*輪播圖箭頭設計調整*/
+
+#home header .owl-carousel .owl-nav button *{
+    font-size: 8rem;
+    color: #FFECE5;
+
+}
+
+.filter-area .pro-item{
+
+    border:1px solid salmon;
+}
+
+.banner{
+
+    height: 700px;
+}
+
+
+
+
+

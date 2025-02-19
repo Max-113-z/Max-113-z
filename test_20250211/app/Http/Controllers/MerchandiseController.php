@@ -79,5 +79,15 @@ class MerchandiseController extends Controller
         ];
         return view('merchandise.manage', $binding);
     }
+    public function MerchandiseViewPage()
+    {
+        $merchandises = Merchandise::get();
+        $binding = [
+            'title' => '瀏覽商品',
+            'merchandises' => $merchandises
+        ];
+        return view('merchandise.view', $binding);
+    }
 }
+
 
