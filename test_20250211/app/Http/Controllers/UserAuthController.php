@@ -48,12 +48,12 @@ class UserAuthController extends Controller
                 ['nickname' => $input['nickname']],
                 function ($message) use ($input) {
                     $message->to($input['email'], $input['nickname'])
-                        ->from('gtaped14876@gmail.com')
+                        ->from('a7830079@gmail.com')
                         ->subject('恭喜恭喜 恭喜你註冊成功');
                 }
             );
 
-            return redirect('/test_20250211/public/user/auth/signin');
+            return redirect('/user/auth/signin');
         }
     }
     public function SignInPage()
