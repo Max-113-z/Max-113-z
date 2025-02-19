@@ -2,13 +2,12 @@
     <head> 
         <meta charset="utf-8"> 
         <title>@yield('title')</title>
-        <script src="/assets/js/jquery-2.2.4.min.js"defer></script>
-        <script src="/assets/js/bootstrap.min.js" defer></script>
-        <link rel="stylesheet" href="/assets/css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/style.css" >
-        <link rel="stylesheet" href="/assets/css/media.css" >  
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> 
-        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+        <script src="{{asset('assets/js/jquery-2.2.4.min.js')}}"defer></script>
+        <script src="{{asset('assets/js/bootstrap.min.js')}}" defer></script>
+        <link rel="stylesheet" href="{{asset('assets/css/bootstrap-5.3.3-dist/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/fonts/icons-1.11.3/font/bootstrap-icons.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/bostyle.css')}}" >
+        <link rel="stylesheet" href="{{asset('assets/css/bomedia.css')}}">  
     </head> 
     <body> 
     <div class="bg-body-tertiary py-1 border-bottom broder-3 border-brown">
@@ -159,7 +158,7 @@
         <div class="container"> 
             @yield('content') 
         </div> 
-        <footer class="py-5 bg-silver ">
+    <footer class="py-5 bg-gp ">
     <div class="container">
       <!-- 社群、連結、聯絡資訊 -->
       <div class="footer-top">
@@ -168,26 +167,32 @@
           <div class="col">
             <!-- logo -->
             <div class="text-lg-center mb-3">
-              <a class="col-7" href="index.html" title="首頁">
-                <img src="images/hlogo.png" alt="MAX WATCH商標">
+              <a class="col-12" href="index.html" title="首頁">
+                <img src="{{asset('/images/hlogo.svg')}}" alt="MAX WATCH商標">
               </a>
             </div>
             <!-- 社群logo -->
             <ul class="list-unstyled d-flex align-items-center justify-content-lg-center social-icon">
-              <li class="me-3">
-                <a class="text-dark display-5" href="#" target="_blank" title="前往MAX WATCH FB專頁">
+              <li class="me-4 mt-3">
+                <a class="text-light display-6" href="#" target="_blank" title="前往MAX WATCH FB專頁">
                   <i class="bi bi-facebook"></i>
                   <span class="d-none">FB專頁</span>
                 </a>
               </li>
-              <li class="me-3">
-                <a class="text-dark display-5" href="#" target="_blank" title="前往MAX WATCH IG專頁">
+              <li class="me-4 mt-3">
+                <a class="text-light display-6" href="#" target="_blank" title="前往MAX WATCH IG專頁">
                   <i class="bi bi-instagram"></i>
                   <span class="d-none">IG專頁</span>
                 </a>
               </li>
-              <li>
-                <a class="text-dark display-5" href="#" target="_blank" title="歡迎加MAX WATCH LINE好友">
+              <li class="me-4 mt-3">
+                <a class="text-light display-6" href="#" target="_blank" title="前往MAX WATCH threads專頁">
+                  <i class="bi bi-threads"></i>
+                  <span class="d-none">IG專頁</span>
+                </a>
+              </li>
+              <li class="mt-3">
+                <a class="text-light display-6" href="#" target="_blank" title="歡迎加MAX WATCH LINE好友">
                   <i class="bi bi-line"></i>
                   <span class="d-none">加LINE好友</span>
                 </a>
@@ -196,7 +201,7 @@
           </div>
           <!-- 連結 -->
           <div class="col">
-            <h3 class="h5 border-bottom d-inline-block col-8 pb-3">連結</h3>
+            <h3 class="h5 border-bottom d-inline-block col-8 pb-3 fw-bolder">連結</h3>
             <!-- hr class=h5 h -->
             <ul class="list-unstyled row row-cols-2 g-3">
               <li class="nav-item">
@@ -227,7 +232,7 @@
           </div>
           <!-- 聯絡資訊 -->
           <div class="col">
-            <h3 class="h5">聯絡資訊</h3>
+            <h3 class="h5 border-bottom d-inline-block col-8 pb-3 fw-bolder">聯絡資訊</h3>
             <ul class="list-unstyled">
               <li><span>客服專線:</span>+886 0942-300-579</li>
               <li><span>電子信箱:</span>service@gmail.com</li>
@@ -244,12 +249,11 @@
       </div>
     </div>
     <!-- 版全申告 -->
-    <div class="bg-dark py-3 text-center footer-bottom">
+    <div class="bg-gp py-3 text-center footer-bottom">
       <div class="container">
-        <small class="text-light">&copy; 2025 MAX WATCH
-          <span class="px-2 d-md-inline-block d-none">|</span>
+        <small class="text-light">&copy; 2025 moremorecat
+          <!-- <span class="px-2 d-md-inline-block d-none">|</span> -->
           <br class="d-md-none d-block">
-          此網站為版型設計，無商業用途
         </small>
       </div>
     </div>

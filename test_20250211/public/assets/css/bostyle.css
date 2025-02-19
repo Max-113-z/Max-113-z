@@ -1,0 +1,211 @@
+body{
+    font-family: "微軟正黑體",sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img,
+iframe{
+    width:100%;
+}
+/* 色彩 */
+.text-dark{
+    color:#120505
+}
+.text-pp{
+    color:#EED9CD
+}
+.text-white{
+    color:#fff
+}
+.text-red{
+    color:#FF0000
+}
+.text-ricegray{
+    color: #D1CCC1 ;
+}
+
+.bg-gray{
+    background-color:#AEAEAE
+}
+.bg-gp{
+    background-color:#957D95
+}
+.bg-silver{
+    background-color:rgba(192, 192, 192, 0.251)
+}
+.bg-silver-a{
+    background-color:rgba(192, 192, 192, 0.645) 
+}
+.bg-tea{/* ------專題奶茶色------- */
+    background-color:#EED9CD
+}
+.bg-ricegray{
+    background-color: #D1CCC1 ;
+}
+.btn-green{
+    background-color: darkseagreen;
+}
+.btn-blue{
+    background-color: rgb(173, 216, 230);
+}
+.btn-orange{
+    background-color: rgb(255, 213, 128);
+}
+
+.btn-green:hover,
+.btn-light:hover{
+    background-color: #d2dce8 !important;
+    color: antiquewhite !important;
+}
+.border-brown{
+    border-color: #ad5959 !important;
+}
+/* ------------- */
+.py-7{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.fs-10{
+    font-size: 0.625rem;
+}
+[lang="en"]p{
+    text-align:left;
+}
+.bg-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+/* ------------ */
+.lang-menu .dropdown-toggle::after{
+    display: none;
+}
+.lang-menu .dropdown-menu{
+    min-width: auto;
+ }
+ .lang-menu .dropdown-menu li.border-bottom:last-of-type{
+    border:0 !important;
+ }
+ /* .navbar-collapse{ 
+    flex-grow:0;
+ } */
+.section-title p::before{
+    content:"†"
+}
+.section-title p::after{
+    content:"†"
+}
+.cart-btn span{
+    bottom: 0.3em;
+}
+#new-product .card ul{
+    bottom: -100px;
+    transition: 0.5s;
+}
+#new-product .card:hover ul{
+    bottom: 0;
+}
+#new-product .card-text span::before{
+    content:"$";
+    padding-right: 0.3rem;
+}
+#new-product .card-text span::after{
+    content:"元";
+    padding-left: 0.3rem;
+    font-size: 70%;
+}
+#info text.card p{
+    text-align: justify;
+}
+#info li{
+    line-height: 1.7;
+}
+.img-box{
+    height: 250px;
+}
+#new-letter.bg-img{
+    background-attachment: fixed;
+}
+/* for-name{
+    box-shadow: 5px 10px 5px rgba(0,0,0,0.3);
+} */
+ #for-message{
+    resize: none;
+    height: 150px;
+ }
+ .map iframe{
+    height: 500px;
+ }
+ .soical-icon li:last-of-type
+ .filter-btn li:last-of-type{
+    margin-right: 0 !important;
+ }
+ .z-100{
+    z-index:-100; /*d-none的效果 */
+ }
+
+#news-letter .container>div.position-absolute .logo-s{
+    width:120px;
+}
+#news-letter .container>div.position-absolute {
+    /* top:-200px */
+    top: calc(-7rem - 10px )
+}
+.filter-box .card-body{
+    opacity: 0;
+    transition: all .5s;
+}
+.filter-box .col:hover .card-body{
+    opacity: 1;
+    top:1.5rem !important;
+    right:1.5rem !important;
+    bottom:1.5rem !important;
+    left:1.5rem !important;
+    border-radius: 2rem;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+    background: #AEAEAE;
+    width: 30px;
+}
+#cart-list-form th:not(th:last-of-type):not(th:first-of-type){
+    border-right:1px solid #8a8a8a
+}
+.plus-btn i,
+.dash-btn i{
+    width:25px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    font-size: 0.8rem;
+}
+#cart-list-form table{
+    --bs-table-bg: transparent !important;
+}
+#detail .card-text span::before{
+    content:"$";
+    padding-right: 0.3rem;
+}
+#detail .card-text span::after{
+    content:"元";
+    padding-left: 0.3rem;
+    font-size: 70%;
+}
+#price::before{
+    content:"$";
+    padding-right: 0.3rem;
+}
+#price::after{
+    content:"元";
+    padding-left: 0.3rem;
+    font-size: 70%;
+}
+.percentCount{
+    font-weight: 400;
+    font-size: 0.875;
+    margin-top: 0.5rem;
+    /* color:; */
+}
