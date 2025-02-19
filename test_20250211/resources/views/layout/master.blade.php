@@ -4,7 +4,6 @@
         <title>@yield('title')</title>
         <script src="{{asset('assets/js1/jquery-2.2.4.min.js')}}"defer></script>
         <script src="{{asset('assets/js1/bootstrap.min.js')}}" defer></script>
-        <link rel="stylesheet" href="{{asset(js/ui-main/dist/fancybox/fancybox.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/bootstrap-5.3.3-dist/css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/fonts/icons-1.11.3/font/bootstrap-icons.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/bostyle.css')}}" >

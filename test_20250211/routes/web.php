@@ -47,8 +47,8 @@ Route::group(['prefix' => 'merchandise'], function () {
         'App\Http\Controllers\MerchandiseController@MerchandiseManagePage'
     );
     Route::get(
-        'view',
-        'App\Http\Controllers\MerchandiseController@MerchandiseViewPage'
+        'product',
+        'App\Http\Controllers\MerchandiseController@MerchandiseProductPage'
     );
     
 });
