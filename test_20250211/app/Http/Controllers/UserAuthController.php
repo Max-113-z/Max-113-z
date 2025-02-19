@@ -53,7 +53,7 @@ class UserAuthController extends Controller
                 }
             );
 
-            return redirect('/user/auth/signin');
+            return redirect('/test_20250211/public/user/auth/signin');
         }
     }
     public function SignInPage()
@@ -74,13 +74,13 @@ class UserAuthController extends Controller
         $tmpuser = User::where('email',$input['email'])->first();
         // dd(tmpuser);
         if (is_null($tmpuser)){
-            return redirect('/user/auth/signin')
+            return redirect('/test_20250211/public/user/auth/signin')
                 ->withErrors(['查無此帳號', '請重新輸入'])
                 ->withInput();
         } else {
             if (Hash::check($input['password'], $tmpuser['password'])) {
                 session()->put('user_id', $tmpuser['id']);
-                return redirect('/user/auth/signin')
+                return redirect('/test_20250211/public/user/auth/signin')
                     ->withErrors(['密碼正確', '請重新輸入'])
                     ->withInput();
             } else {
@@ -98,7 +98,7 @@ class UserAuthController extends Controller
     public function SignOut()
     {
         session()->forget('user_id');
-        return redirect('/user/auth/signin');
+        return redirect('/test_20250211/public/user/auth/signin');
     }    
 }
 

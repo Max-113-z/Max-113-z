@@ -26,6 +26,7 @@ Route::group(['prefix' => 'user'], function () {
             'signout',
             'App\Http\Controllers\UserAuthController@SignOut'
         );
+        
     });
 });
 Route::group(['prefix' => 'merchandise'], function () {
@@ -51,6 +52,20 @@ Route::group(['prefix' => 'merchandise'], function () {
         'App\Http\Controllers\MerchandiseController@MerchandiseProductPage'
     );
     
+});
+Route::group(['prefix' => 'booking'], function (){
+    
+    // 預約頁面
+    Route::get(
+        'booking',
+        'App\Http\Controllers\BookingController@BookingPage'
+    );
+    
+    //新增預約頁面
+    Route::post(
+        'booking',
+        'App\Http\Controllers\BookingController@BookingProcess'
+    );
 });
             
 

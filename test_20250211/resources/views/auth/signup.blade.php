@@ -1,5 +1,5 @@
 <!-- 指定繼承 layout.master 母模板 --> 
-@extends('layout.master') 
+@extends('layout.main') 
 
 <!-- 傳送資料到母模板，並指定變數為 title --> 
 @section('title', $title) 
@@ -11,11 +11,11 @@
 
 <form action="/user/auth/signup" method="post">
     {{ csrf_field() }}
-    暱稱： <input type="text" name="nickname" 
+    暱稱： <input class="form-control bg-light" type="text" name="nickname" 
             placeholder="暱稱" value="{{old('nickname')}}"><br>
-    Email: <input type="text" name="email" 
+    Email: <input class="form-control" type="text" name="email" 
             placeholder="Email" value="{{old('email')}}"><br>
-    密碼： <input type="password" name="password" 
+    密碼： <input class="form-control" type="password" name="password" 
             placeholder="密碼" value="{{old('password')}}"><br>
     使用者類型：
     <input type="radio" name="type" value="G"

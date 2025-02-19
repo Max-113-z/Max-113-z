@@ -11,15 +11,19 @@
 
 <!-- @include('component.social') -->
 @include('component.errors')
-<ul class="list-group">
-    @foreach($merchandises as $merchandise)
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        <div>
-            <h4 class="mb-1">{{ $merchandise->name }}</h4>
-            <img src="{{ asset($merchandise->photo ?? 'assets/images/default-merchandise.png') }}" />
-            <p class="mb-1">{{ $merchandise->price }}</p>
+@foreach($merchandises as $merchandise)
+<div class="filter-area">
+        <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 row-cols-xxl-4 g-3 filter-box">
+                <div class="col  filtr-item"  data-category="1">
+                <img src="{{ asset($merchandise->photo ?? 'assets/images/default-merchandise.png') }}" class="card-img-top" />
+                        <div class="card-body bg-silver-a position-absolute top-0 end-0 bottom-0 start-0
+                        d-flex flex-column align-items-center justify-content-center">
+                        <h4 class="mb-1">{{ $merchandise->name }}</h4>
+                        <p class="mb-1">{{ $merchandise->price }}</p>
+                        </div>
+                </div>
         </div>
-    </li>
+</div>
     @endforeach
 </ul>
 @endsection
