@@ -13,7 +13,7 @@
 @include('component.errors')
 <!-- <form action="/user/auth/signin" method="post">
     {{ csrf_field() }} -->
-<form action="/merchandise/{{ $merchandise->id }}/edit"
+<form action="/admin/merchandise/{{ $merchandise->id }}/edit"
     method="post"
     enctype="multipart/form-data">
     <!-- 商品名稱 <input type="text" name="name"
