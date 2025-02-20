@@ -13,10 +13,10 @@
 @include('component.errors')
 <form action="/user/auth/signin" method="post">
     {{ csrf_field() }}
-    Email： <input type="text" name="email"
+    Email: <input class="form-control bg-light" type="text" name="email"
         placeholder="Email" value="{{old('email')}}"><br>
-    密碼： <input type="password" name="password"
+    密碼： <input class="form-control bg-light" type="password" name="password"
         placeholder="密碼" value="{{old('password')}}"><br>
-    <input type="submit" value="登入">
+    <input class="btn btn-dark px-4"  type="submit" value="登入">
 </form>
 @endsection

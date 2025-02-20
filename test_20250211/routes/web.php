@@ -67,5 +67,13 @@ Route::group(['prefix' => 'booking'], function (){
         'App\Http\Controllers\BookingController@BookingProcess'
     );
 });
+Route::group(['prefix' => 'kitty'], function (){
+    
+    // 預約頁面
+    Route::get(
+        'maine',
+        'App\Http\Controllers\KittyController@MainePage'
+    );
+});
             
 

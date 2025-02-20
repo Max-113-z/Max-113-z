@@ -34,5 +34,10 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'googole'=>[
+        'client_id'=> env('GOOGLE_CLIENT_ID'),
+        'client_secret'=> env('GOOGLE_CLIENT_SECRET'),
+        'redirect'=>'http://laravelclasstest.com/google/auth/callback'
+    ]
 
 ];
