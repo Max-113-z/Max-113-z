@@ -3,9 +3,16 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\AuthUserAdminMiddleware;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
+Route::get(
+    '/google/auth',
+    'App\Http\Controllers\SocialiteController@redirectToProvider'
+);
+Route::get(
+    '/google/auth/callback',
+    'App\Http\Controllers\SocialiteController@handleProviderCallback'
+);
+
 Route::group(['prefix' => 'user'], function () {
     Route::group(['prefix' => 'auth'], function () {
         Route::get('login', 'App\Http\Controllers\UserAuthController@Login'

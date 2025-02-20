@@ -74,13 +74,13 @@ class UserAuthController extends Controller
         $tmpuser = User::where('email',$input['email'])->first();
         // dd(tmpuser);
         if (is_null($tmpuser)){
-            return redirect('/test_20250211/public/user/auth/signin')
+            return redirect('/user/auth/signup')
                 ->withErrors(['查無此帳號', '請重新輸入'])
                 ->withInput();
         } else {
             if (Hash::check($input['password'], $tmpuser['password'])) {
                 session()->put('user_id', $tmpuser['id']);
-                return redirect('/test_20250211/public/user/auth/signin')
+                return redirect('/user/auth/signup')
                     ->withErrors(['密碼正確', '請重新輸入'])
                     ->withInput();
             } else {

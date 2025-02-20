@@ -27,6 +27,7 @@ class MerchandiseController extends Controller
         ];
 
         $merchandise_sql_data = Merchandise::create($merchandise_data);
+        dd($merchandise_sql_data );
 
         return redirect('/merchandise/' . $merchandise_sql_data['id'] . '/edit');
     }
