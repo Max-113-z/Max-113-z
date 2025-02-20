@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Mail;
 
 use App\Shop\Entity\Merchandise;
 
+use Illuminate\Http\Request;
+
 class MerchandiseController extends Controller
 {
     public function MerchandiseCreateProcess()
@@ -27,7 +29,7 @@ class MerchandiseController extends Controller
         ];
 
         $merchandise_sql_data = Merchandise::create($merchandise_data);
-        dd($merchandise_sql_data );
+        // dd($merchandise_sql_data );
 
         return redirect('/merchandise/' . $merchandise_sql_data['id'] . '/edit');
     }
@@ -73,13 +75,35 @@ class MerchandiseController extends Controller
     } 
     public function MerchandiseManagePage()
     {
+        // 獲取所有商品
         $merchandises = Merchandise::get();
+    
+        // 傳遞資料到視圖
         $binding = [
             'title' => '管理商品',
             'merchandises' => $merchandises
         ];
+        
         return view('merchandise.manage', $binding);
     }
+    
+    public function destroy($id)
+    {
+        // 根據 ID 找到該商品
+        $merchandise = Merchandise::find($id);  // 使用 $merchandise 來接收
+    
+        // 檢查商品是否存在
+        if (!$merchandise) {
+            return redirect()->route('merchandise.manage')->with('error', '找不到該商品');
+        }
+    
+        // 刪除商品
+        $merchandise->delete();
+    
+        // 刪除後重新導向並顯示成功訊息
+        return redirect()->route('merchandise.manage')->with('success', '商品已成功刪除');
+    }
+
     public function MerchandiseProductPage()
     {
         $merchandises = Merchandise::get();

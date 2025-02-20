@@ -20,10 +20,10 @@
             <p class="mb-1">{{ $merchandise->price }}</p>
             <a href="/merchandise/{{ $merchandise->id }}/edit" class="btn btn-primary btn-sm">編輯</a>
         </div>
-        <form action="/merchandise/{{ $merchandise->id }}" method="post" class="d-inline">
-            {{ csrf_field() }}
-            {{ method_field('DELETE') }}
-            <button type="submit" class="btn btn-danger btn-sm">刪除</button>
+        <form action="{{ route('merchandises.destroy', $merchandise->id) }}" method="post">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger btn-sm" onclick=' return confirm("確定要刪除資料嗎")'>刪除</button>
         </form>
     </li>
     @endforeach

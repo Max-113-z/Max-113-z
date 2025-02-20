@@ -13,6 +13,9 @@ Route::get(
     'App\Http\Controllers\SocialiteController@handleProviderCallback'
 );
 
+
+
+
 Route::group(['prefix' => 'user'], function () {
     Route::group(['prefix' => 'auth'], function () {
         Route::get('login', 'App\Http\Controllers\UserAuthController@Login'

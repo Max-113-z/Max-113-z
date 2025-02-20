@@ -98,7 +98,7 @@ class UserAuthController extends Controller
     public function SignOut()
     {
         session()->forget('user_id');
-        return redirect('/test_20250211/public/user/auth/signin');
+        return redirect('/user/auth/signin');
     }    
 }
 
