@@ -112,5 +112,6 @@
     <button type="submit" class="btn btn-default">更新</button>
     {{-- CSRF 欄位--}}
     {{ csrf_field() }}
+    <a class="btn btn-sliver"  href="/admin/merchandise/manage">管理</a>
 </form>
 @endsection

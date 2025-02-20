@@ -13,6 +13,7 @@ use App\Shop\Entity\Merchandise;
 
 class MerchandiseController extends Controller
 {
+    #產品create
     public function MerchandiseCreateProcess()
     {
         $merchandise_data = [
@@ -31,7 +32,7 @@ class MerchandiseController extends Controller
 
         return redirect('/admin/merchandise/' . $merchandise_sql_data['id'] . '/edit');
     }
-
+    #產品edit
     public function MerchandiseEditPage($merchandise_id)
     {
         $merchandises = Merchandise::where('id', $merchandise_id);
@@ -46,6 +47,7 @@ class MerchandiseController extends Controller
             return view('merchandise.edit', $binding);
         }
     }
+    #產品edit
     public function MerchandiseEditProcess($merchandise_id)
     {
         $input = request()->all();
@@ -71,7 +73,7 @@ class MerchandiseController extends Controller
             ->update($input);
         return redirect('/admin/merchandise/' . $merchandise_id . '/edit');
     } 
-
+    #產品manage
     public function MerchandiseManagePage()
     {
         // 獲取所有商品
@@ -86,7 +88,7 @@ class MerchandiseController extends Controller
         return view('merchandise.manage', $binding);
         
     }
-    
+    #產品刪除
     public function destroy($id)
     {
         // 根據 ID 找到該商品
@@ -104,7 +106,7 @@ class MerchandiseController extends Controller
         // 刪除後重新導向並顯示成功訊息
         return redirect('/admin/merchandise/manage')->with('success', '商品已成功刪除');
     }
-
+    #產品端
     public function MerchandiseProductPage()
     {
         $merchandises = Merchandise::get();

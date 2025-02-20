@@ -28,6 +28,7 @@
         </form>
     </li>
     @endforeach
+    <a class="btn btn-sliver"  href="/admin/merchandise/create">新增</a>
 </ul>
 
 @endsection

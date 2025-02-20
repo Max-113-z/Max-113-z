@@ -68,6 +68,17 @@ Route::group(['prefix' => 'admin'], function () {
         
         });
 });
+
+#用戶端產品
+Route::group(['prefix' => 'user'], function () {
+    Route::group(['prefix' => 'merchandise'], function () {
+        Route::get(
+            'product',
+            'App\Http\Controllers\MerchandiseController@MerchandiseProductPage'
+        );
+    });
+});
+
 #預約系統管理
 Route::group(['prefix' => 'booking'], function (){
     
