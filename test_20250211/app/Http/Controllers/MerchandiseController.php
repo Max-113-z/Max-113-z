@@ -116,6 +116,27 @@ class MerchandiseController extends Controller
         ];
         return view('merchandise.product', $binding);
     }
+    #產品manage
+    public function MerchandiseIndexPage()
+    {
+        // 獲取所有商品
+        $merchandises = Merchandise::all();
+    
+       
+        
+        return view('merchandise.index');
+        
+    }
+    public function ReturnMerchandiseData()
+    {
+        $merchandises = Merchandise::get();
+        return response()->jason([
+            'status' =>0,
+            'msg'=>'',
+            'data'=>$merchandises
+
+        ]);
+    }
 }
 
 

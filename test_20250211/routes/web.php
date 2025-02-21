@@ -63,7 +63,12 @@ Route::group(['prefix' => 'admin'], function () {
             'product',
             'App\Http\Controllers\MerchandiseController@MerchandiseProductPage'
         );
-        Route::delete("/{id}",  "App\Http\Controllers\MerchandiseController@destroy");
+        Route::delete("/{id}",  "App\Http\Controllers\MerchandiseController@destroy"
+        ); 
+        Route::get(
+            'purchase',
+            'App\Http\Controllers\CheckoutController@__construct'
+        );
 
         
         });
@@ -75,6 +80,12 @@ Route::group(['prefix' => 'user'], function () {
         Route::get(
             'product',
             'App\Http\Controllers\MerchandiseController@MerchandiseProductPage'
+        
+        );
+        Route::get(
+            'index',
+            'App\Http\Controllers\MerchandiseController@MerchandiseIndexPage'
+        
         );
     });
 });
@@ -96,11 +107,12 @@ Route::group(['prefix' => 'booking'], function (){
 });
 Route::group(['prefix' => 'kitty'], function (){
     
-    // 預約頁面
+    // 頁面
     Route::get(
         'maine',
         'App\Http\Controllers\KittyController@MainePage'
     );
 });
+
             
 
