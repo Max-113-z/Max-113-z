@@ -1,71 +1,49 @@
-@media (min-width:768px) {
-    /*top_logo位置設置*/
+@media (min-width:768px){
 
-    .parent_pc {
-        position: relative;
-        /* 父元素需設定 relative */
-        width: auto;
-        height: 450px;
+    /*about-banner設置*/
+    .start-ph-about{
+
+    left: -65px;
+    width: 65%;
+    }
+    .start-ph-word{
+
+    left: 820px;
+    top:-65px;
     }
 
-    .child_pc {
-        position: absolute;
-        /* 讓子元素相對於父元素定位 */
-        top: 55%;
-        left: 54.5%;
-        transform: translate(-50%, -50%);
-        /* 讓子元素回推自身寬高的一半 */
-        width: 250px;
-        height: 400px;
+}
+
+
+/*平板橫向介面設置*/
+@media (min-width:992px){
+ 
+}
+
+
+/*設置成版面在大於1400px時,畫面版面固定大小為1320px*/
+@media (min-width:1400px){
+
+    .box{
+        max-width: 1320px;
+        
+    }
+}
+@media (min-width:14600px){
+
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: -190px;
+        left: 0;
+        z-index: 1030;
+    }
+    .box{
+        max-width: 1320px;
     }
 }
 
-@media (max-width:991px) {
-    #cart-list-form thead {
-        display: none;
-    }
+@media (max-width:991px){
 
-    #cart-list-form table,
-    /* #cart-list-form tr,  */
-    #cart-list-form td {
-        display: block;
-        border: none;
-    }
 
-    #cart-list-form tr {
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        border-bottom: 1px solid gray
-    }
-
-    #cart-list-form tr:last-of-type {
-        border: none;
-    }
-
-    #cart-list-form tr td:nth-of-type(1) {
-        flex: 0 0 6%;
-    }
-
-    #cart-list-form tr td:nth-of-type(2) {
-        flex: 0 0 94%;
-    }
-
-    #cart-list-form tr td:nth-of-type(3) {
-        flex: 0 0 30%;
-    }
-
-    #cart-list-form tr td:nth-of-type(4) {
-        flex: 0 0 40%;
-    }
-
-    #cart-list-form tr td:nth-of-type(5) {
-        flex: 0 0 30%;
-    }
-
-    #cart-list-form tr td:nth-of-type(6) {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
 }

@@ -10,25 +10,53 @@ img,
 iframe{
     width:100%;
 }
+/*圖片原尺寸*/
+.img-70{
+    width: 50%;
+}
 /* 色彩 */
+.text-red{
+    color:#904C77;
+}
+.text-gray{
+    color:#957D95;
+}
+.text-orange{
+    color:#FFAD8F;
+}
+.text-lightora{
+    color:#FFD6C0;
+}
+.text-white{
+    color:#EED9CD;
+}
 .text-dark{
     color:#120505
 }
 .text-pp{
     color:#EED9CD
 }
-.text-white{
-    color:#fff
-}
-.text-red{
-    color:#FF0000
-}
 .text-ricegray{
     color: #D1CCC1 ;
 }
-
+/* ==== */
+.bg-red{
+    background-color:hsl(322, 31%, 43%);
+}
+.bg-red-a{
+    background-color:hsla(322, 31%, 43%, 0.7);
+}
 .bg-gray{
-    background-color:#AEAEAE
+    background-color:#957D95;
+}
+.bg-lightoragn{
+    background-color:#FFD6C0;
+}
+.bg-orange{
+    color:#FFAD8F;
+}
+.bg-white{
+    background-color:#EED9CD;
 }
 .bg-gp{
     background-color:#957D95
@@ -63,10 +91,115 @@ iframe{
 .border-brown{
     border-color: #ad5959 !important;
 }
+/*按鈕設置*/
+.btn-red{
+
+    background-color:hsl(322, 31%, 43%) !important;
+}
+.btn-gray{
+    background-color:#FFD6C0;
+    color:#957D95 ;
+}
+/*標題設定*/
+.text-title{
+    color: #EED9CD;
+    background-color:#957D95 ;
+    font-weight: bold; /* 調整字體粗細 */
+    font-size: 1.75rem; /* 修正 font-weight 誤用 */
+    padding: 15px 25px; /* 控制內距，讓左右邊框更窄 */
+    border-radius: 4rem;
+    display: inline-block; /* 讓背景只包住文字，不撐滿 */
+}
+/*nav位置調整*/
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    left: 0;
+    z-index: 1030;
+}
+
+/*logo上方間隔*/
+h1{
+    font-size: calc(1.35rem + 0.55vw);
+}
+.top-30{
+    top: 30%;
+}
+.start-01 {
+    left: 1 !important;
+}
+
+/*nav背景透明設置*/
+.navbar-custom {
+    background-color: hsla(322, 31%, 43%, 0.7) !important; 
+    backdrop-filter: blur(5px); 
+}
+
+/*nav連結文字設置重製*/
+.navbar-nav .nav-link.active,.nav-link.show,.nav-item,.nav-link{ 
+    padding: 0.5rem 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 900;
+    color: #FFD6C0;
+    background-color: transparent !important;
+    letter-spacing: 2px;
+}
+/*nav連結文字滑鼠滑過效果*/
+.nav-active:hover{
+    color: #3d1919 !important;
+}
+.nav-link:hover{
+
+    color: #3d1919;
+}
+/*about-banner設置*/
+.start-pc-about{
+
+    left: -205px;
+    width: 70%;
+}
+.start-pc-word{
+
+    left: 790px;
+    top:10px;
+}
+/*拉開與about的間隔*/
+
+.mt-news{
+
+    margin-top: 30rem !important;
+}
+/*標籤按鈕設置*/
+
+#more-news .nav-tabs .nav-link {
+    color: #957D95 !important; /* 深色文字 */
+    border: none !important;
+    font-weight: bold; /* 調整字體粗細 */
+    font-size: 0.95rem;
+}
+
+#more-news .nav-tabs .nav-link:hover{
+    color: #be6c82 !important; /* 深色文字 */
+    border: none !important;
+}
+
+#more-news .nav-tabs .nav-link.active {
+    color: #c83f8c !important; /* active 文字更深 */
+    border: none !important;
+}
+/*按鈕與內容間格線設置*/
+
+.nav-tabs {
+    border-bottom: 2px solid #be6c82 !important; /* 加粗底線 */
+    width:75%; /* 縮短線條長度 */
+    margin: 0 auto; /* 置中 */
+}
 /* ------------- */
-.py-7{
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+.py-7 {
+    padding-top: 4rem !important;
+    padding-bottom: 5rem !important
 }
 .fs-10{
     font-size: 0.625rem;
@@ -83,12 +216,30 @@ iframe{
 .lang-menu .dropdown-toggle::after{
     display: none;
 }
-.lang-menu .dropdown-menu{
+/* .lang-menu .dropdown-menu{
     min-width: auto;
  }
  .lang-menu .dropdown-menu li.border-bottom:last-of-type{
     border:0 !important;
- }
+ } */
+ /*標籤按鈕滑動設置*/
+.dropdown-menu{
+
+    --bs-dropdown-min-width: 7rem;
+    font-weight: 400 !important;
+    --bs-dropdown-color:#5A0001 !important;
+    --bs-dropdown-bg: #FFD6C0;
+    --bs-dropdown-border-width: 0;
+}
+
+.dropdown-item {
+    color: #5A0001;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 70%;
+    left: 22px;
+}
  /* .navbar-collapse{ 
     flex-grow:0;
  } */
@@ -139,6 +290,12 @@ iframe{
  .map iframe{
     height: 500px;
  }
+ /*分類按鈕設置*/
+
+.filter-btn li{
+    border-radius: none;
+    color: #5A0001
+}
  .soical-icon li:last-of-type
  .filter-btn li:last-of-type{
     margin-right: 0 !important;
@@ -208,4 +365,9 @@ iframe{
     font-size: 0.875;
     margin-top: 0.5rem;
     /* color:; */
+}
+/*內容格線設置*/
+
+.card{
+    --bs-card-border-width: none;
 }

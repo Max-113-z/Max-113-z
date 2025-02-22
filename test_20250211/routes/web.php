@@ -91,27 +91,29 @@ Route::group(['prefix' => 'user'], function () {
 });
 
 #預約系統管理
-Route::group(['prefix' => 'booking'], function (){
-    
-    // 預約頁面
-    Route::get(
-        'booking',
-        'App\Http\Controllers\BookingController@BookingPage'
-    );
-    
-    //新增預約頁面
-    Route::post(
-        'booking',
-        'App\Http\Controllers\BookingController@BookingProcess'
-    );
-});
-Route::group(['prefix' => 'kitty'], function (){
-    
-    // 頁面
-    Route::get(
-        'maine',
-        'App\Http\Controllers\KittyController@MainePage'
-    );
+Route::group(['prefix' => 'user'], function () {
+    Route::group(['prefix' => 'booking'], function (){
+        
+        // 預約頁面
+        Route::get(
+            'booking',
+            'App\Http\Controllers\BookingController@BookingPage'
+        );
+        
+        //新增預約頁面
+        Route::post(
+            'booking',
+            'App\Http\Controllers\BookingController@BookingProcess'
+        );
+    });
+    Route::group(['prefix' => 'kitty'], function (){
+        
+        // 頁面
+        Route::get(
+            'maine',
+            'App\Http\Controllers\KittyController@MainePage'
+        );
+    });
 });
 
             

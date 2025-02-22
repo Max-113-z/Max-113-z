@@ -2,7 +2,7 @@
     <div class="container">
       <!-- 社群、連結、聯絡資訊 -->
       <div class="footer-top">
-        <div class="row row-col-1 row-col-md-2 row-cols-xl-3 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
           <!-- 社群 -->
           <div class="col">
             <!-- logo -->
@@ -14,25 +14,25 @@
             <!-- 社群logo -->
             <ul class="list-unstyled d-flex align-items-center justify-content-lg-center social-icon">
               <li class="me-4 mt-3">
-                <a class="text-light display-6" href="#" target="_blank" title="前往喵嚕貓擼 FB專頁">
+                <a class="text-light display-6" href="https://www.facebook.com/share/1Dh8URKWvr/?mibextid=wwXIfr" target="_blank" title="前往喵嚕貓擼 FB專頁">
                   <i class="bi bi-facebook"></i>
                   <span class="d-none">FB專頁</span>
                 </a>
               </li>
               <li class="me-4 mt-3">
-                <a class="text-light display-6" href="#" target="_blank" title="前往喵嚕貓擼 IG專頁">
+                <a class="text-light display-6" href="https://www.instagram.com/moremorecat_kh?igsh=c2Y5ZDhmZGZ2OTVh" target="_blank" title="前往喵嚕貓擼 IG專頁">
                   <i class="bi bi-instagram"></i>
                   <span class="d-none">IG專頁</span>
                 </a>
               </li>
               <li class="me-4 mt-3">
-                <a class="text-light display-6" href="#" target="_blank" title="前往喵嚕貓擼 threads專頁">
+                <a class="text-light display-6" href="https://www.threads.net/@moremorecat_kh?igshid=NTc4MTIwNjQ2YQ==" target="_blank" title="前往喵嚕貓擼 threads專頁">
                   <i class="bi bi-threads"></i>
                   <span class="d-none">IG專頁</span>
                 </a>
               </li>
               <li class="mt-3">
-                <a class="text-light display-6" href="#" target="_blank" title="歡迎加喵嚕貓擼 LINE好友">
+                <a class="text-light display-6" href="https://line.me/R/ti/p/@040fyehj" target="_blank" title="歡迎加喵嚕貓擼 LINE好友">
                   <i class="bi bi-line"></i>
                   <span class="d-none">加LINE好友</span>
                 </a>
@@ -40,7 +40,7 @@
             </ul>
           </div>
           <!-- 連結 -->
-          <div class="col">
+          <div class="col ">
             <h3 class="h5 border-bottom d-inline-block col-9 pb-3 fw-bolder text-light">連結</h3>
             <!-- hr class=h5 h -->
             <ul class="list-unstyled row row-cols-2 g-2 text-light">
@@ -72,17 +72,17 @@
           </div>
           <!-- 聯絡資訊 -->
           <div class="col text-light ">
-            <h3 class="h5 border-bottom d-inline-block col-9 pb-3 fw-bolder">聯絡資訊</h3>
-            <ul class="list-unstyled 1h-1g">
-              <li class=mb-2><span>客服專線:</span>+886 0942-300-579</li>
-              <li class=mb-2><span>電子信箱:</span>service@gmail.com</li>
-              <li class=mb-2>
-                <span>地址:</span>
-                <a class="text-light" href="https://maps.app.goo.gl/3YHmYz3VusYfgEhk6" title="前往google map[另開新視窗]"
-                  target="_blank">高雄市鼓山區華安街49號</a>
+            <h3 class="h5 border-bottom d-inline-block w-100 pb-3 fw-bolder">聯絡資訊</h3>
+            <ul class="list-unstyled lh-lg">
+              <li class="mb-2"><span>客服專線:</span> +886 0908-087-722</li>
+              <li class="mb-2 "><span>Line ID:</span> @mmorecat (賞貓、咖啡廳預約等請多善用)</li>
+              <li class="mb-2">
+              <span>地址:</span>
+              <a class="text-light" href="https://maps.app.goo.gl/3YHmYz3VusYfgEhk6" title="前往 Google Maps [另開新視窗]" target="_blank">
+                高雄市鼓山區華安街49號
+              </a>
               </li>
-              <li class=mb-2><span>營業時間:</span>週二-週日 9am 到 9pm</li>
-              <li><span>店休時間:</span>週一 及 每月的第三週 週日</li>
+              <li class="mb-2"><span>營業時間:</span> 12:00-20:00</li>
             </ul>
           </div>
         </div>
@@ -91,7 +91,7 @@
     <!-- 版全申告 -->
     <div class="bg-gp py-3 text-center footer-bottom">
       <div class="container">
-        <small class="text-light">&copy; 2025 moremorecat
+        <small class="text-light">&copy; 2025 moremorecat喵嚕貓擼
           <!-- <span class="px-2 d-md-inline-block d-none">|</span> -->
           <br class="d-md-none d-block">
         </small>

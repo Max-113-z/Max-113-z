@@ -111,7 +111,7 @@ class MerchandiseController extends Controller
     {
         $merchandises = Merchandise::get();
         $binding = [
-            'title' => '瀏覽商品',
+            'title' => '成貓介紹',
             'merchandises' => $merchandises
         ];
         return view('merchandise.product', $binding);
@@ -123,7 +123,6 @@ class MerchandiseController extends Controller
         $merchandises = Merchandise::all();
     
        
-        
         return view('merchandise.index');
         
     }

@@ -59,8 +59,8 @@ class UserAuthController extends Controller
     public function SignInPage()
     {
         $binding = [
-            'title' => '登入',
-            'note' => '使用者登入頁面'
+            'title' => '會員登入',
+            'note' => '會員登入頁面'
         ];
         return view('auth.signin', $binding);
     }

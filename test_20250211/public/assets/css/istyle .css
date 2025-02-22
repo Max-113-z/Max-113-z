@@ -1,81 +1,41 @@
 
-/*圖片原尺寸*/
-img{
-    width:100%
-}
 /*色彩計畫*/
-.text-red{
-    color:#904C77;
-}
-.text-gray{
-    color:#957D95;
-}
-.text-orange{
-    color:#FFAD8F;
-}
-.text-lightora{
-    color:#FFD6C0;
-}
-.text-white{
-    color:#EED9CD;
-}
 
-.bg-red{
-    background-color:hsl(322, 31%, 43%);
-}
-.bg-red-a{
-    background-color:hsla(322, 31%, 43%, 0.7);
-}
-.bg-gray{
-    background-color:#957D95;
-}
-.bg-gray{
-    background-color:#FFD6C0;
-}
-.bg-orange{
-    color:#FFAD8F;
-}
-.bg-white{
-    background-color:#EED9CD;
-}
-btn-red{
-    background-color:hsl(322, 31%, 43%);
-    color: #FFD6C0;
-}
-.btn-gray{
-    background-color:#FFD6C0;
-    color:#957D95 ;
-}
+
+
+
+
+
 
 /*top-head設計*/
 
-/*logo上方間隔*/
-h1{
-    font-size: calc(1.35rem + 0.55vw);
+
+
+
+
+/*使最後一個按鈕間隔取消*/
+.filter-btn li:last-of-type{
+   margin-right: 0;
 }
 
-/*nav背景透明設置*/
-.navbar-custom {
-    background-color: hsla(322, 31%, 43%, 0.7) !important; 
-    backdrop-filter: blur(5px); 
-}
 
-/*nav連結文字設置重製*/
-.navbar-nav .nav-link.active,.nav-link.show,.nav-item,.nav-link{ 
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 900;
-    color: #FFD6C0;
-    letter-spacing: 2px;
-}
-/*nav連結文字滑鼠滑過效果*/
-.nav-active:hover{
-    color: #3d1919 !important;
-}
-.nav-link:hover{
 
-    color: #3d1919;
-}
+/*about 欄位設置*/
+
+/*修改banner與main間的間距*/
+
+
+
+
+/*more-news欄位設置*/
+
+
+
+
+
+
+
+
 
 
 
