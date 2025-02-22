@@ -40,33 +40,33 @@
             </ul>
           </div>
           <!-- 連結 -->
-          <div class="col ">
+          <div class="col">
             <h3 class="h5 border-bottom d-inline-block col-9 pb-3 fw-bolder text-light">連結</h3>
-            <!-- hr class=h5 h -->
+            <!-- hr-->
             <ul class="list-unstyled row row-cols-2 g-2 text-light">
               <li class="nav-item">
-                <a class="nav-link " href="index.html#about" title="前往 關於我們">關於我們</a>
+                <a class="nav-link1 " href="index.html#about" title="前往 關於我們">關於我們</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#service" title="前往 服務項目">服務項目</a>
+                <a class="nav-link1" href="index.html#service" title="前往 服務項目">服務項目</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product.html" title="前往 各類商品">各類商品</a>
+                <a class="nav-link1" href="product.html" title="前往 各類商品">各類商品</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#new-product" title="前往 最新商品">最新商品</a>
+                <a class="nav-link1" href="index.html#new-product" title="前往 最新商品">最新商品</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sale.html" title="前往 促銷活動">促銷活動</a>
+                <a class="nav-link1" href="sale.html" title="前往 促銷活動">促銷活動</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#info" title="前往 相關資訊">相關資訊</a>
+                <a class="nav-link1" href="index.html#info" title="前往 相關資訊">相關資訊</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#news-letter" title="前往 訂閱">訂閱</a>
+                <a class="nav-link1" href="index.html#news-letter" title="前往 訂閱">訂閱</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#contact" title="前往 聯絡我們">聯絡我們</a>
+                <a class="nav-link1" href="index.html#contact" title="前往 聯絡我們">聯絡我們</a>
               </li>
             </ul>
           </div>

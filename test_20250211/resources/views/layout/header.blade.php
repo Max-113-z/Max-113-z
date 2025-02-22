@@ -1,5 +1,4 @@
 
-
    <!--Navbar -->
    <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
       <div class="container">
@@ -10,7 +9,6 @@
                   <img src="{{asset('/images/hlogo.svg')}}" alt="喵嚕商標">
               </a>
           </h1>
-  
           <!-- 手機板漢堡選單 -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,4 +66,4 @@
     </nav>
 
     <!-- js -->
-    <script src="{{ asset('assets/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{asset('assets/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js')}}"></script>

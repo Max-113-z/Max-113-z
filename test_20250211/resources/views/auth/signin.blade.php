@@ -10,6 +10,7 @@
 
 @include('component.errors')
 <article>
+  <div class="container">
   <div class="card mb-3">
     <div class="row g-0">
       <!-- 圖片區塊 (圖片在左邊) -->
@@ -58,6 +59,7 @@
       </div>
     </div>
   </div>
+</div>
 </article>
 
 
