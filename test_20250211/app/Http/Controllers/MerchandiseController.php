@@ -107,14 +107,14 @@ class MerchandiseController extends Controller
         return redirect('/admin/merchandise/manage')->with('success', '商品已成功刪除');
     }
     #產品端
-    public function MerchandiseProductPage()
+    public function MerchandiseMaineCoonPage()
     {
         $merchandises = Merchandise::get();
         $binding = [
             'title' => '成貓介紹',
             'merchandises' => $merchandises
         ];
-        return view('merchandise.product', $binding);
+        return view('merchandise.mainecoon', $binding);
     }
     #產品manage
     public function MerchandiseIndexPage()

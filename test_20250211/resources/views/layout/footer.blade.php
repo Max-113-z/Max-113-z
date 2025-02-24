@@ -7,7 +7,7 @@
           <div class="col">
             <!-- logo -->
             <div class="text-lg-center mb-3">
-              <a class="col-12" href="index.html" title="首頁">
+              <a class="col-12" href="/user/merchandise/index" title="首頁">
                 <img src="{{asset('/images/hlogo.svg')}}" alt="喵嚕貓擼商標">
               </a>
             </div>
@@ -40,33 +40,27 @@
             </ul>
           </div>
           <!-- 連結 -->
-          <div class="col">
-            <h3 class="h5 border-bottom d-inline-block col-9 pb-3 fw-bolder text-light">連結</h3>
+          <div class="col text-start text-white">
+            <h3 class="h5 border-bottom d-inline-block col-9 pb-3 fw-bolder ">連結</h3>
             <!-- hr-->
-            <ul class="list-unstyled row row-cols-2 g-2 text-light">
-              <li class="nav-item">
-                <a class="nav-link1 " href="index.html#about" title="前往 關於我們">關於我們</a>
+            <ul class="list-unstyled row row-cols-2 g-2 ">
+              <li class="nav-item1">
+                <a class="nav-link1" href="#about" title="前往 關於我們">關於我們</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link1" href="index.html#service" title="前往 服務項目">服務項目</a>
+              <li class="nav-item1">
+                <a class="nav-link1" href="#feed" title="前往 飼養須知">飼養須知</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link1" href="product.html" title="前往 各類商品">各類商品</a>
+              <li class="nav-item1">
+                <a class="nav-link1" href="/user/merchandise/mainecoon" title="前往 喵咪介紹">喵咪介紹</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link1" href="index.html#new-product" title="前往 最新商品">最新商品</a>
+              <li class="nav-item1">
+                <a class="nav-link1" href="#contact" title="前往 聯絡喵嚕">聯絡喵嚕</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link1" href="sale.html" title="前往 促銷活動">促銷活動</a>
+              <li class="nav-item1">
+                <a class="nav-link1" href="#" title="前往 其他品牌">其他品牌</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link1" href="index.html#info" title="前往 相關資訊">相關資訊</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link1" href="index.html#news-letter" title="前往 訂閱">訂閱</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link1" href="index.html#contact" title="前往 聯絡我們">聯絡我們</a>
+              <li class="nav-item1">
+                <a class="nav-link1" href="/user/auth/signin" title="前往 會員登入">會員登入</a>
               </li>
             </ul>
           </div>

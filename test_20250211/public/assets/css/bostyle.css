@@ -93,12 +93,41 @@ iframe{
 }
 /*按鈕設置*/
 .btn-red{
-
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #FFD6C0;
     background-color:hsl(322, 31%, 43%) !important;
+    border-radius: 25px;
 }
 .btn-gray{
     background-color:#FFD6C0;
     color:#957D95 ;
+}
+.btn-red:hover{
+    font-weight: 600;
+    color: hsl(322, 31%, 43%);
+    background-color:#FFD6C0 !important;
+    border-radius: 30px;
+}
+
+
+/*連結設定*/
+
+a{
+    color: #FFAD8F;
+    font-weight: 3rem !important;
+   
+}
+
+/*表格框設定*/
+
+.form-control{
+
+    width: 95%;
+    padding: 1.5rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 2.5rem;
+    background-color: rgba(240, 248, 255, 0.719);
 }
 /*標題設定*/
 .text-title{
@@ -146,6 +175,13 @@ h1{
     background-color: transparent !important;
     letter-spacing: 2px;
 }
+.nav-item1,.nav-link1{ 
+    font-size: 0.85rem;
+    font-weight: 900;
+    color:#EED9CD;
+    background-color: transparent !important;
+    letter-spacing: 2px;
+}
 /*nav連結文字滑鼠滑過效果*/
 .nav-active:hover{
     color: #3d1919 !important;
@@ -162,14 +198,26 @@ h1{
 }
 .start-pc-word{
 
-    left: 790px;
+    left: 990px;
     top:10px;
 }
 /*拉開與about的間隔*/
 
 .mt-news{
 
-    margin-top: 30rem !important;
+    margin-top: 45rem !important;
+}
+/*其他頁面頁首設定*/
+
+.otherpage-top {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+}
+.otherpage-top img {
+    width: 200px; /* 調整為適合大小 */
+    height: auto; /* 保持比例 */
 }
 /*標籤按鈕設置*/
 
@@ -371,3 +419,22 @@ h1{
 .card{
     --bs-card-border-width: none;
 }
+/* logo動畫 */
+#desktop-logo {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.logo-small {
+    transform: scale(0.7); /* 縮小 */
+    opacity: 0; /* 透明 */
+}
+#contact .text-title{
+    color: #783f63;
+    background-color:#FFAD8F ;
+    font-weight: bold; /* 調整字體粗細 */
+    font-size: 1.75rem; /* 修正 font-weight 誤用 */
+    padding: 15px 30px; /* 控制內距，讓左右邊框更窄 */
+    border-radius: 3rem;
+    display:inline-block; /* 讓背景只包住文字，不撐滿 */
+}
+

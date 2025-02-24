@@ -18,8 +18,6 @@ Route::get(
 // 會員管理
 Route::group(['prefix' => 'user'], function () {
     Route::group(['prefix' => 'auth'], function () {
-        Route::get('login', 'App\Http\Controllers\UserAuthController@Login'
-        );
         Route::get('signup', 'App\Http\Controllers\UserAuthController@SignUpPage'
         );
         Route::post('signup', 'App\Http\Controllers\UserAuthController@SignUpProcess'
@@ -32,7 +30,7 @@ Route::group(['prefix' => 'user'], function () {
             'signin',
             'App\Http\Controllers\UserAuthController@SignInProcess'
         );
-        Route::get(
+        Route::post(
             'signout',
             'App\Http\Controllers\UserAuthController@SignOut'
         );
@@ -48,11 +46,11 @@ Route::group(['prefix' => 'admin'], function () {
         )->middleware(AuthUserAdminMiddleware::class);
         
         Route::get(
-            '{mechandise_id}/edit',
+            '{merchandise_id}/edit',
             'App\Http\Controllers\MerchandiseController@MerchandiseEditPage'
         );
         Route::post(
-            '{mechandise_id}/edit',
+            '{merchandise_id}/edit',
             'App\Http\Controllers\MerchandiseController@MerchandiseEditProcess'
         );
         Route::get(
@@ -60,8 +58,8 @@ Route::group(['prefix' => 'admin'], function () {
             'App\Http\Controllers\MerchandiseController@MerchandiseManagePage'
         );
         Route::get(
-            'product',
-            'App\Http\Controllers\MerchandiseController@MerchandiseProductPage'
+            'mainecoon',
+            'App\Http\Controllers\MerchandiseController@MerchandiseMaineCoonPage'
         );
         Route::delete("/{id}",  "App\Http\Controllers\MerchandiseController@destroy"
         ); 
@@ -78,8 +76,8 @@ Route::group(['prefix' => 'admin'], function () {
 Route::group(['prefix' => 'user'], function () {
     Route::group(['prefix' => 'merchandise'], function () {
         Route::get(
-            'product',
-            'App\Http\Controllers\MerchandiseController@MerchandiseProductPage'
+            'mainecoon',
+            'App\Http\Controllers\MerchandiseController@MerchandiseMaineCoonPage'
         
         );
         Route::get(
