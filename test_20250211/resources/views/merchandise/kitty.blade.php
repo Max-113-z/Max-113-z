@@ -7,7 +7,7 @@
 <!-- 傳送資料到母模板，並指定變數為 content -->
 @section('content')
 
-<h2 class="ms-3">成貓介紹</h2>
+<h2 class="ms-3">小貓介紹</h2>
 
 <!-- @include('component.social') -->
 @include('component.errors')
@@ -15,7 +15,7 @@
 <nav class="ms-3" aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="#">喵咪介紹</a></li>
-                      <li class="breadcrumb-item"><a href="#">成貓介紹</a></li>
+                      <li class="breadcrumb-item"><a href="#">小貓介紹</a></li>
                     </ol>
                 </nav>
 

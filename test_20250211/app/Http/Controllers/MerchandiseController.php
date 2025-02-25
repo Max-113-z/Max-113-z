@@ -136,6 +136,15 @@ class MerchandiseController extends Controller
 
         ]);
     }
+    public function MerchandiseKittyPage()
+    {
+        // 獲取所有商品
+        $merchandises = Merchandise::all();
+    
+       
+        return view('merchandise.kitty');
+        
+    }
 }
 
 

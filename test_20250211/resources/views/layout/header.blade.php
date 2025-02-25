@@ -16,30 +16,30 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
     
-            <!-- ⭐ 讓導覽列左右對齊，Logo 置中 ⭐ -->
+            <!--  讓導覽列左右對齊，Logo 置中  -->
             <div class="collapse navbar-collapse w-100 d-flex justify-content-between align-items-center" id="navbarSupportedContent">
                 <!-- 左側選單 -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active nav-active" href="#">關於喵嚕</a>
+                        <a class="nav-link active nav-active" href="/user/merchandise/index#about">關於喵嚕</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#more-news" role="button" data-bs-toggle="dropdown">
                             飼養須知
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">飼養方式</a></li>
-                            <li><a class="dropdown-item" href="#">家長分享</a></li>
+                            <li><a class="dropdown-item" href="#more-news">飼養方式</a></li>
+                            <li><a class="dropdown-item" href="#more-news">家長分享</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            小貓找家
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">浪浪小貓</a></li>
-                            <li><a class="dropdown-item" href="#">新生小貓</a></li>
-                        </ul>
+                    <a class="nav-link dropdown-toggle" href="/user/merchandise/mainecoon" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    喵咪介紹
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="/user/merchandise/mainecoon">喵嚕成貓介紹</a></li>
+                        <li><a class="dropdown-item" href="#">新生小貓找家</a></li>
+                    </ul>
                     </li>
                 </ul>
     
@@ -53,13 +53,13 @@
                 <!-- 右側選單 -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active nav-active" href="#">聯絡喵嚕</a>
+                        <a class="nav-link active nav-active" href="/user/merchandise/index#contact">聯絡喵嚕</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-active" href="#">其他品牌</a>
+                        <a class="nav-link active nav-active" href="#more-news">其他品牌</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-active" href="#">
+                        <a class="nav-link active nav-active" href="/user/auth/signin">
                             <span class="icon-user"></span>會員登入
                         </a>
                     </li>
@@ -69,4 +69,4 @@
     </nav>
 
     <!-- js -->
-    <script src="{{asset('assets/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js')}}"></script>
+

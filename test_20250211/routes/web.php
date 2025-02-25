@@ -85,6 +85,11 @@ Route::group(['prefix' => 'user'], function () {
             'App\Http\Controllers\MerchandiseController@MerchandiseIndexPage'
         
         );
+        Route::get(
+            'kitty',
+            'App\Http\Controllers\MerchandiseController@MerchandiseKittyPage'
+        
+        );
     });
 });
 
@@ -102,14 +107,6 @@ Route::group(['prefix' => 'user'], function () {
         Route::post(
             'booking',
             'App\Http\Controllers\BookingController@BookingProcess'
-        );
-    });
-    Route::group(['prefix' => 'kitty'], function (){
-        
-        // 頁面
-        Route::get(
-            'maine',
-            'App\Http\Controllers\KittyController@MainePage'
         );
     });
 });

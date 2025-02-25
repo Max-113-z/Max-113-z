@@ -28,12 +28,12 @@
                 </li>
                 <!-- 下拉式選單 -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#feed"role="button"
+                    <a class="nav-link dropdown-toggle" href="#more-news"role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         飼養須知
                     </a>
                     <ul class="dropdown-menu ">
-                        <li><a class="dropdown-item" href="#">飼養方式</a></li>
+                        <li><a class="dropdown-item" href="#more-news">飼養方式</a></li>
                         <li><a class="dropdown-item" href="#">家長分享</a></li>
                     </ul>
                     </li>
@@ -45,7 +45,7 @@
                         <li><a class="dropdown-item" href="/user/merchandise/mainecoon">喵嚕成貓介紹</a></li>
                         <li><a class="dropdown-item" href="#">新生小貓找家</a></li>
                     </ul>
-                    </li>
+                </li>
                 <li class="nav-item position-relative d-lg-block d-none">
                     <h1>
                         <span class="opacity-0">喵嚕喵嚕</span>
@@ -60,7 +60,7 @@
                     <a class="nav-link active nav-active" href="#contact">聯絡喵嚕</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active nav-active" href="#">其他品牌</a>
+                    <a class="nav-link active nav-active" href="#more-news">其他品牌</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active nav-active"  href="/user/auth/signin">
@@ -156,6 +156,7 @@
             </ul>
             
             <!-- 內容區塊 -->
+             
             <div class="tab-content mt-3">
                 <!-- 服務內容 -->
                 <div id="service" class="tab-pane fade show active">
